@@ -66,3 +66,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   )
 };
+
+// Change LED colors depending on the layer.
+uint32_t layer_state_set_user(uint32_t state) {
+	switch (biton32(state)) {
+		case _QWERTY:
+			rgblight_setrgb_purple();
+			break;
+		case _SYMB:
+			rgblight_setrgb_orange();
+			break;
+		case _ADJUST:
+			rgblight_setrgb_red();
+			break;
+		default: //  for any other layers, or the default layer
+			rgblight_setrgb_yellow();
+			break;
+	}
+	return state;
+};
+
