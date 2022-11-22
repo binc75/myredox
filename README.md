@@ -1,5 +1,5 @@
 # My REDOX
-!(img/1.jpg?raw=true "Redox Keyboard")
+![Redox Keyboard](img/1.jpg)
 
 # Configurations and notes
 
