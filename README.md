@@ -1,4 +1,6 @@
 # My REDOX
+![Alt text](1.jpg?raw=true "Redox Keyboard")
+
 # Configurations and notes
 
 ## Configure
